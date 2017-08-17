@@ -25,7 +25,7 @@ def decision_tree_backward(X, y, n_selected_features):
 
     n_samples, n_features = X.shape
     # using 10 fold cross validation
-    cv = KFold(n_samples, n_folds=10, shuffle=True)
+    cv = KFold(n_samples, n_splits=10, shuffle=True)
     # choose decision tree as the classifier
     clf = DecisionTreeClassifier()
 
